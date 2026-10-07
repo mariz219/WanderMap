@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact — WanderMap</title>
+
+  <!-- hena benrabot contact page b file el CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+  <!-- body class betkhaly el CSS ye3raf en de contact page -->
+  <!-- el navbar ely fo2, feh el logo w links el pages -->
+  <nav>
+    <div class="brand">
+      <a href="Journal_main.html">Wander<span>Map</span></a>
+    </div>
+
+    <!-- links el pages, w Contact 3aleha active 3ashan de el page ely fat7a -->
+    <ul class="nav-links">
+      <li><a href="Journal_main.html">Journal</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="accommodations.html">Accommodations</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- hero bta3 contact page, feh title w short intro -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Say <span>hello.</span></h1>
+      <p>Have a question, a travel recommendation, or just want to connect? This is the place.</p>
+    </div>
+  </div>
+
+
+  <!-- wrap da container bylem el content w ykhaleeh fe nos el page -->
+  <div class="wrap">
+
+    <!-- contact layout by2assem el page le info side w form side -->
+    <div class="contact-layout">
+
+      <!-- contact info ely 3al shmal -->
+      <div class="contact-info">
+        <h2>Let's talk travel.</h2>
+        <p>
+          Whether you want to share a destination, ask about a place in the journal, or just reach out — all
+          messages are welcome and read.
+        </p>
+
+        <!-- info block bta3 response time -->
+        <div class="info-block">
+          <div class="info-label">Response time</div>
+          <div class="info-value">Within 48 hours</div>
+          <div class="info-note">Usually much faster than that.</div>
+        </div>
+
+        <!-- info block bta3 location -->
+        <div class="info-block">
+          <div class="info-label">Based in</div>
+          <div class="info-value">Cairo, Egypt</div>
+          <div class="info-note">But rarely staying still for long.</div>
+        </div>
+      </div>
+
+
+      <!-- form card bta3 send message -->
+      <div class="contact-form">
+        <h2>Send a message</h2>
+
+        <!-- name field badal first name w last name 3ashan el form yeb2a a2sar -->
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+
+        <!-- email field -->
+        <div class="field">
+          <label>Email address</label>
+          <input type="email" placeholder="you@example.com">
+        </div>
+
+        <!-- message box lel kalam el tawel -->
+        <div class="field">
+          <label>Message</label>
+          <textarea placeholder="What would you like to say? A place you love, a question about a trip, anything at all..."></textarea>
+        </div>
+
+        <!-- button el send, JavaScript bykhaleeh yekhfi w yzhar success message -->
+        <button class="submit-btn" id="send-btn">Send message</button>
+
+        <div class="success-msg" id="success-msg">
+          ✓ Message sent. Thank you — we will get back to you soon.
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- quick answers section, de FAQ accordion -->
+    <section class="faq-section">
+      <h2>Quick answers</h2>
+      <p class="section-sub">Things people usually want to know.</p>
+
+      <!-- list bta3 el FAQ items -->
+      <div class="faq-list">
+
+        <!-- kol faq-item byefta7 w ye2fel lama el user yedos 3aleh -->
+        <div class="faq-item">
+          <div class="faq-q">Are the journal entries all personal trips? <span class="faq-icon">+</span></div>
+          <div class="faq-a">
+            Yes, every entry in the journal is a place one of us has personally been to. The
+            writing is based on our own experiences, not sourced from other guides or reviews.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Do you take requests for destinations to cover? <span class="faq-icon">+</span></div>
+          <div class="faq-a">
+            Sometimes. If a place is suggested enough, and one of us ends up going, it will
+            make its way into the journal. The best way to suggest one is through the contact form above.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Can I use your photos or writing? <span class="faq-icon">+</span></div>
+          <div class="faq-a">
+            Please reach out first. Personal, non-commercial use with proper credit is
+            usually fine. Commercial use or republishing without permission is not.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">How often do you add new journal entries? <span class="faq-icon">+</span></div>
+          <div class="faq-a">
+            Whenever there is a new trip worth writing about. There is no fixed schedule —
+            quality over frequency.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- newsletter section fe a5er contact page -->
+    <section class="section">
+      <div class="newsletter-box">
+        <h2>Join the journal.</h2>
+        <p>You are just one click away from joining our newsletter!</p>
+
+        <!-- email input w subscribe button -->
+        <div class="newsletter-row">
+          <input placeholder="your@email.com">
+          <button id="sub-btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- script hena fe a5er el body 3ashan el page elements tekon loaded awel -->
+  <script>
+    // subscribe button byetla3 alert simple lama el user yedos
+    document.getElementById('sub-btn').onclick = function () {
+      alert('Thanks! You are in.');
+    };
+
+    // send button byzhar success message w byekhfi el button
+    document.getElementById('send-btn').onclick = function () {
+      document.getElementById('success-msg').style.display = 'block';
+      document.getElementById('send-btn').style.display = 'none';
+    };
+
+    // hena bengeb kol FAQ items 3ashan n3mel accordion effect
+    var faqs = document.querySelectorAll('.faq-item');
+
+    // lama user yedos 3ala question, el answer bta3ha tefta7 w el ba2y ye2fel
+    faqs.forEach(function (item) {
+      item.querySelector('.faq-q').addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+
+        faqs.forEach(function (i) {
+          i.classList.remove('open');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

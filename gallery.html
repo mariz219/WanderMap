@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery — WanderMap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="gallery-page">
+
+    <nav>
+        <div class="brand"><a href="index.html">Wander<span>Map</span></a></div>
+        <ul class="nav-links">
+            <li><a href="Journal_main.html">Journal</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <h1>Travel <span>gallery</span></h1>
+            <p>A larger collection of photos from the places we wrote about.</p>
+        </div>
+    </div>
+
+    <div class="wrap">
+
+        <section class="section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-sub">A collection of our travel photos.</p>
+            <div class="gallery">
+                <div class="gallery-horizontal">
+                    <img src="https://i.pinimg.com/1200x/17/07/df/1707df80ba8bf082615d5752f2ba4354.jpg"></a>
+                </div>
+                <div class="gallery-horizontal"><img
+                        src="https://i.pinimg.com/736x/1e/a8/51/1ea85170de6d778735d2eb0b1064be78.jpg"></div>
+                <div class="gallery-horizontal"><img
+                        src="https://i.postimg.cc/Kc1jTZnH/Whats-App-Image-2026-04-17-at-19-49-18.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.postimg.cc/R0tGqrgQ/Whats-App-Image-2026-03-19-at-20-04-51.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/736x/0e/57/f3/0e57f34592ce083aa6cdea9a03977504.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.postimg.cc/T2FkRrMr/Whats-App-Image-2026-03-19-at-20-12-27.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.postimg.cc/ZYHZ7XJJ/Whats-App-Image-2026-03-19-at-20-03-26.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.postimg.cc/QMq9f0tv/Whats-App-Image-2026-03-19-at-20-03-31.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/originals/e1/1d/8e/e11d8e67279217937fec4c3b4d43158c.jpg">
+                </div>
+                <div class="gallery-vertical"><img
+                        src="https://preview.redd.it/dubai-aesthetics-hd-pack-v0-icitffm5tn1e1.jpg?width=1080&crop=smart&auto=webp&s=c370607b207d094e7a0ab121a047208c2021a7b8">
+                </div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/736x/53/ac/d3/53acd313a3fd28d2a346e01c3967fd3e.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/1200x/92/13/4d/92134d67534fb1fbc4424b3bcd6568f3.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/736x/ca/8a/82/ca8a8219e6e620aa0adbb2560460976f.jpg"></div>
+                <div class="gallery-vertical"><img
+                        src="https://i.pinimg.com/736x/8a/fd/ee/8afdee51a9ee8ca7c08d92c1877f9956.jpg"></div>
+                <div class="gallery-vertical">
+                    <img src="https://i.pinimg.com/736x/60/a5/13/60a5136dde5d3977f4441400a7e1910a.jpg">
+                </div>
+                <div class="gallery-horizontal">
+                    <img src="https://i.pinimg.com/1200x/36/6d/6a/366d6a6642fd2d6356aaf870c49cb0b9.jpg">
+                </div>
+                <div class="gallery-horizontal">
+                    <img src="https://i.pinimg.com/1200x/dd/58/3a/dd583a4bdcf066901304bc14f2fa0cf7.jpg">
+                </div>
+                <div class="gallery-horizontal">
+                    <img src="https://i.pinimg.com/1200x/81/91/c7/8191c751278a9837b720f955469481cd.jpg">
+                </div>
+                <div class="gallery-vertical">
+                    <img src="https://i.pinimg.com/736x/27/d4/c4/27d4c4364f637fd5ae7984796577d751.jpg">
+                </div>
+                <div class="gallery-vertical">
+                    <img src="https://i.pinimg.com/736x/33/24/ce/3324ce039f770c9ab07c7bc8a65ea3cd.jpg">
+                </div>
+                <div class="gallery-vertical">
+                    <img src="https://i.pinimg.com/736x/5f/b5/24/5fb52456fa982f865e697966ac895b5d.jpg">
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="quote-section">
+        <p class="big-quote">"Not all those who wander, <em>are lost.</em>"</p>
+        <p class="quote-note">WanderMap · Gallery</p>
+    </section>
+
+    </div>
+    <div id="viewer">   // l container ally hy popup fe l page
+    <img id="viewer-img">  // n place l image fe l lightbox ally hytl3
+    </div>
+    <script>
+        const images = document.querySelectorAll('.gallery img'); //array nhot feha kol l imgs
+        const viewer = document.getElementById('viewer');         //gets the id="viewer" aashan nhot l img
+        const viewerImg = document.getElementById('viewer-img');  // gets the id"viewer-img" aashan n show l clicked img
+
+        images.forEach(img => {                  // loop t3di aala kol image
+            img.addEventListener('click', () => {
+                viewer.style.display = "flex";  // to show image on click badl none
+                viewerImg.src = img.src; // aashan l resolution reduction aw l cropping
+            });
+        });
+
+        viewer.addEventListener('click', () => {
+       viewer.style.display = "none";  //l close button f ay mkan fe l page
+        });
+    </script>
+
+</body>
+
+</html>

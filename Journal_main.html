@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WanderMap</title>
+
+  <!-- hena bengeb Leaflet script 3ashan el map yeshtaghal fe a5er el page -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- hena benrabot el page b file el CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="journal-page">
+
+  <!-- body class betkhaly el CSS ye3raf en de journal page -->
+  <!-- el navbar ely fo2, feh el logo w links el pages -->
+  <nav>
+    <div class="brand">
+      <a href="Journal_main.html">Wander<span>Map</span></a>
+    </div>
+
+    <!-- links el pages, w Journal 3aleha active 3ashan de el page ely fat7a -->
+    <ul class="nav-links">
+      <li><a href="Journal_main.html" class="active">Journal</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="accommodations.html">Accommodations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- hero bta3 awel el page, feh video background w kalam ta3reefy kbeer -->
+  <div class="hero">
+
+    <!-- el video autoplay w muted 3ashan yeshtaghal background mn gheir sound -->
+    <video autoplay muted loop playsinline src="https://ik.imagekit.io/v05wk02oy/Untitled.mov"></video>
+
+    <!-- el text ely bayen fo2 el video -->
+    <div class="hero-content">
+      <h1>Every place<br><span>leaves something.</span></h1>
+      <p>
+        This is not a guide to the best things to do. It is a shared journal of the places that stayed with us
+        long after we left them.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- wrap da container bylem el content w ykhaleeh fe nos el page -->
+  <div class="wrap">
+
+    <!-- section el about, byshra7 fekret el journal -->
+    <section class="section" id="about">
+      <h2 class="section-title">About this journal</h2>
+      <p class="section-sub">A few words on where this came from.</p>
+
+      <!-- grid by2assem el section le text card w video card -->
+      <div class="about-grid">
+
+        <!-- card feha el kalam el ta3reefy -->
+        <div class="about-card">
+          <p>
+            This started as a place to store travel notes before we forgot them. It became something more
+            like a record of how different places felt rather than what they looked like in photos.
+          </p>
+
+          <p>
+            The entries here are honest. Some trips were quiet and slow. Some were busier than expected. All
+            of them left something behind.
+          </p>
+
+          <p>
+            We are not professional travelers or photographers. We are just a group who moved around, paid
+            attention, and wrote what each place felt like.
+          </p>
+        </div>
+
+        <!-- el video ely gamb el about text, bydey shakl basary lel section -->
+        <div class="about-img">
+          <video autoplay muted loop playsinline>
+            <source src="https://ik.imagekit.io/dxsjfg2l7/the%20about%20video.mov">
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- section el journal entries, kol article gowa makan mokhtalef -->
+    <section class="section" id="journal">
+      <h2 class="section-title">Journal entries</h2>
+
+      <!-- list bta3 el posts kolha -->
+      <div class="places-list">
+
+        <!-- kol article nafs el structure: sora kbera, kalam, w sowar zyada -->
+        <article class="post">
+
+          <!-- post-thumb da makan el sora el kbera bta3 kol article -->
+          <div class="post-thumb">
+            <img src="https://i.postimg.cc/0QfXN2hy/piqsels-com-id-fbswq.jpg">
+          </div>
+
+          <!-- post-body feh title el makan, el kalam, w sowar zyada -->
+          <div class="post-body">
+            <h3>Dahab, Sinai</h3>
+
+            <!-- post-sub da el intro el soghayar abl el paragraph el tawel -->
+            <p class="post-sub">
+              We went expecting a simple beach town. We did not expect the calm, the color
+              of the water, or how easy it was to lose track of time there.
+            </p>
+
+            <p>
+              Dahab felt slow in the best possible way. Mornings started with the sea completely clear and
+              still, and by sunset the whole town seemed to soften even more. There was something about
+              the mix of desert, water, and low-key streets that made everything feel lighter.
+            </p>
+
+            <p>
+              What stayed with us most was how unforced it all felt. Nothing in Dahab tried too hard. The
+              beauty was already there in the coastline, the mountains in the distance, and the quiet
+              rhythm of the place itself.
+            </p>
+
+            <!-- sowar zyada lel story, btet7at ta7t el kalam -->
+            <div class="story-photos">
+              <img src="https://i.postimg.cc/wBYqd0h3/Whats-App-Image-2026-04-17-at-14-16-59.jpg">
+              <img src="https://i.postimg.cc/y8xDQQ7D/Whats-App-Image-2026-04-17-at-14-14-02-(1).jpg">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="post">
+          <div class="post-thumb">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1600&q=80">
+          </div>
+
+          <div class="post-body">
+            <h3>Santorini, Greece</h3>
+
+            <p class="post-sub">
+              The photos do not lie exactly, but they leave out the feeling of walking
+              through it in person.
+            </p>
+
+            <p>
+              During the day, everything was bright in a way that felt honest. The white buildings did not
+              just look clean, they reflected the sun so strongly it softened everything around them. The
+              blue-domed rooftops stood out, not loud, just certain. Like they belonged exactly where they
+              were, against the sky and the sea.
+            </p>
+
+            <p>
+              The island was not just something to look at, it was something to move through, slowly,
+              without needing to frame it.
+            </p>
+
+            <!-- story-photos betkhally el post feh visuals aktar mn sora wa7da -->
+            <div class="story-photos">
+              <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="post">
+          <div class="post-thumb">
+            <img src="https://i.pinimg.com/1200x/13/cc/a5/13cca50f76fd036f98e624719482e9bd.jpg">
+          </div>
+
+          <div class="post-body">
+            <h3>Dubai, UAE</h3>
+
+            <p class="post-sub">
+              We expected it to feel loud all the time. It actually felt calmer at night
+              than we thought it would.
+            </p>
+
+            <p>
+              During the day, Dubai can feel sharp and a little too controlled. At night it changed
+              completely. The lights reflected everywhere, the buildings felt less harsh, and the empty
+              spaces between them stood out more.
+            </p>
+
+            <p>
+              We did not leave thinking of landmarks first. We left thinking of reflections, roads, and how
+              different the whole city felt after sunset.
+            </p>
+
+            <div class="story-photos">
+              <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&fit=crop&w=1200&q=80">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="post">
+          <div class="post-thumb">
+            <img src="https://i.postimg.cc/6q2qw24k/Whats-App-Image-2026-04-17-at-15-40-02.jpg">
+          </div>
+
+          <div class="post-body">
+            <h3>Ain Sokhna, Egypt</h3>
+
+            <p class="post-sub">This trip ended up being one of the most memorable.</p>
+
+            <p>
+              We remember summers spent in Ain Sokhna with family and relatives, where simple moments
+              turned into lasting memories. Those gatherings were filled with warmth, laughter, and a
+              strong sense of connection that brought everyone closer. The quiet surroundings and shared
+              experiences created a unique atmosphere that we continue to admire.
+            </p>
+
+            <p>
+              Even now, thinking back on those times evokes a deep sense of nostalgia and appreciation for
+              the bonds we built during those special days.
+            </p>
+
+            <div class="story-photos">
+              <img src="https://i.postimg.cc/Z51mN7gH/Whats-App-Image-2026-04-17-at-15-40-28.jpg">
+              <img src="https://i.postimg.cc/Z0zbSfSQ/Whats-App-Image-2026-04-17-at-15-42-50.jpg">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="post">
+          <div class="post-thumb">
+            <img src="https://ik.imagekit.io/0aoqoo4uq/WhatsApp%20Image%202026-04-17%20at%202.55.50%20PM.jpeg">
+          </div>
+
+          <div class="post-body">
+            <h3>Riyadh, Saudi Arabia</h3>
+
+            <p class="post-sub">
+              We never expected that going to Saudi Arabia would feel so life changing,
+              especially when visiting the capital. It grew into a second home, like a place that was hard
+              to let go of.
+            </p>
+
+            <p>
+              Riyadh is one of the very few places that would hug you and welcome you with open arms, in
+              her embrace, it always felt like a place you don't need to figure out who you are in order
+              to be welcomed. It welcomes you regardless of who you are, where you came from, what your
+              ethnicity is and where you're even headed. Riyadh is the place to go when you feel lost,
+              when you don't know where you're headed, it is the place for the perfect atmosphere, for the
+              perfect horizons, clear skies, clear air and it will feel absolutely majestic with every
+              movement you decide to take.
+            </p>
+
+            <div class="story-photos">
+              <img src="https://ik.imagekit.io/0aoqoo4uq/WhatsApp%20Image%202026-04-17%20at%202.47.50%20PM.jpeg">
+              <img src="https://i.postimg.cc/3Nkg0xzD/Whats-App-Image-2026-04-17-at-14-53-37.jpg">
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- section el map, bet3red el places ely etkalemna 3anha fe el journal -->
+    <section class="section" id="map">
+      <h2 class="section-title">Map</h2>
+      <p class="section-sub">The places covered in this journal.</p>
+
+      <!-- div el map nafso, JavaScript by7ot el map gowah -->
+      <div class="map-wrapper">
+        <div id="real-map"></div>
+      </div>
+    </section>
+
+
+    <!-- quote a5er el page, closing mood lel journal -->
+    <section class="quote-section">
+      <p class="big-quote">"Some places don't leave you, <em>even after you do.</em>"</p>
+      <p class="quote-note">WanderMap · Journal</p>
+    </section>
+
+  </div>
+
+
+  <!-- script hena fe a5er el body 3ashan el page elements tekon loaded el awel then ndeha awamer -->
+  <script>
+    // hena ben3mel el map w ben7aded el center w zoom level
+    const map = L.map('real-map', { scrollWheelZoom: false }).setView([27.9, 35.8], 4);
+
+    // de tiles bta3 el map, ya3ni el shakl ely el map hatban beeh
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { attribution: '&copy; Esri', maxZoom: 16 }).addTo(map);
+
+    // array feha kol el places: esm el makan, coordinates, w el country note
+    const places = [
+      { name: 'Dahab, Sinai', coords: [28.5091, 34.5136], note: 'Egypt' },
+      { name: 'Santorini, Greece', coords: [36.3932, 25.4615], note: 'Greece' },
+      { name: 'Dubai, UAE', coords: [25.2048, 55.2708], note: 'UAE' },
+      { name: 'Ain Sokhna, Egypt', coords: [29.6002, 32.3167], note: 'Egypt' },
+      { name: 'Riyadh, Saudi Arabia', coords: [24.7136, 46.6753], note: 'Saudi Arabia' }
+    ];
+
+    // hena benlef 3ala kol makan w ben7ot marker leeh 3ala el map
+    places.forEach(function (p) {
+      L.circleMarker(p.coords, { radius: 9, weight: 2.5, color: '#fff', fillColor: '#b8914a', fillOpacity: 1 }).addTo(map).bindPopup('<strong>' + p.name + '</strong><br>' + p.note);
+    });
+  </script>
+
+</body>
+
+</html>
